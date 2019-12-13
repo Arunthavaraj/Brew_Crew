@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">brew_crew</string>
+    <string name="facebook_app_id">2464102013687169</string>
+    <string name="fb_login_protocol_scheme">fb2464102013687169</string>
+</resources>
