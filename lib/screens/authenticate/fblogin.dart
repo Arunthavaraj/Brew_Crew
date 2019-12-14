@@ -33,6 +33,7 @@ class _LoginPageState extends State<LoginPage> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: Color.fromRGBO(3, 9, 23, 1),
         appBar: AppBar(
           title: Text("Facebook Login"),
           actions: <Widget>[
@@ -47,6 +48,7 @@ class _LoginPageState extends State<LoginPage> {
           ],
         ),
         body: Container(
+          
           child: Center(
             child: isLoggedIn
                 ? _displayUserData(profileData)
@@ -55,7 +57,7 @@ class _LoginPageState extends State<LoginPage> {
         ),
       ),
       theme: ThemeData(
-        fontFamily: 'Nunito',
+        fontFamily: 'OpenSans',
         textTheme: Theme.of(context).textTheme.apply(
           bodyColor: Colors.black,
           displayColor: Colors.grey[600],
@@ -110,21 +112,26 @@ class _LoginPageState extends State<LoginPage> {
             ),
           ),
         ),
-           RaisedButton(
-      child: Text("Go to Home"),
+           Padding(
+             padding: const EdgeInsets.all(10.0),
+             child: RaisedButton(
+      child: Text("Show Some Facts"),
      onPressed: () async {
-                  Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => Home()));
-                },
+                    Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Funfact()));
+                  },
       color: Colors.blueAccent,
-      textColor: Colors.black,
+      textColor: Colors.white,
     ),
+           ),
         SizedBox(height: 28.0),
         Text(
           "FBID ${profileData['id']}\n${profileData['name']}\n${profileData['email']}",
           style: TextStyle(
-          fontSize: 25.0,
+          fontSize: 20.0,
           letterSpacing: 1.1,
+          fontFamily: 'OpenSans',
+          color: Colors.white,
           ),
           textAlign: TextAlign.center,
           

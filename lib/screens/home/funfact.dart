@@ -64,8 +64,8 @@ class _FunfactState extends State<Funfact> with SingleTickerProviderStateMixin {
                   child: new Padding(
                     padding: const EdgeInsets.only(left: 30.0),
                     child: new Text(
-                      "Did you Know?",
-                      style: new TextStyle(color: Colors.white, fontSize: 40.0),
+                      "Did you Know About Flutter?",
+                      style: new TextStyle(color: Colors.white, fontSize: 40.0, fontFamily: 'OpenSans'),
                     ),
                   )),
               new Padding(
@@ -90,8 +90,8 @@ class _FunfactState extends State<Funfact> with SingleTickerProviderStateMixin {
                   padding: const EdgeInsets.symmetric(
                       horizontal: 60.0, vertical: 18.0),
                   child: new Text(
-                    "Show Another Fun Fact",
-                    style: new TextStyle(fontSize: 15.0,color: dispcolor),
+                    "Show Another Fact",
+                    style: new TextStyle(fontSize: 15.0,color: dispcolor,fontFamily: 'OpenSans'),
                   ),
                 ),
                 onPressed: showfacts,
@@ -104,7 +104,7 @@ class _FunfactState extends State<Funfact> with SingleTickerProviderStateMixin {
                       horizontal: 60.0, vertical: 10.0),
                   child: new Text(
                     "Go To Home Page",
-                    style: new TextStyle(fontSize: 15.0,color: dispcolor),
+                    style: new TextStyle(fontSize: 15.0,color: dispcolor,fontFamily: 'OpenSans'),
                   ),
                 ),
                 onPressed: () async {

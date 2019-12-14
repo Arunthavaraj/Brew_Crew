@@ -73,7 +73,7 @@ class _WelcomeState extends State<Welcome> with TickerProviderStateMixin{
 
     _scale2Controller = AnimationController(
       vsync: this,
-      duration: Duration(milliseconds: 300)
+      duration: Duration(milliseconds: 400)
     );
 
     _scale2Animation = Tween<double>(
@@ -145,10 +145,10 @@ class _WelcomeState extends State<Welcome> with TickerProviderStateMixin{
                 mainAxisAlignment: MainAxisAlignment.end,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  FadeAnimation(1, Text("Welcome", 
+                  FadeAnimation(1, Text("Welcome to Brew Crew", 
                   style: TextStyle(color: Colors.white, fontSize: 60),)),
                   SizedBox(height: 20,),
-                  FadeAnimation(1.3, Text("We promise that you'll have the most infuss-free time with us ever.", 
+                  FadeAnimation(1.3, Text("We promise that you'll have the most infuss-free time with us ever. This is a Basic Demo App using Flutter and Firebase Login.", 
                   style: TextStyle(color: Colors.white.withOpacity(.7), height: 1.4, fontSize: 20),)),
                   SizedBox(height: 150,),
                   FadeAnimation(1.6, AnimatedBuilder(

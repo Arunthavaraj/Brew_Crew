@@ -41,6 +41,26 @@ Future getData() async {
   
     Widget build(BuildContext context) {
       return Scaffold(
+        backgroundColor: Color.fromRGBO(3, 9, 23, 1),
+        appBar: AppBar(
+    title: Text('Flutter'),
+    centerTitle: true,
+    titleSpacing: 2.0,
+    backgroundColor: Colors.blue[600],
+    elevation: 0.0,
+    actions: <Widget>[
+      FlatButton.icon(
+        icon: Icon(Icons.person),
+        label: Text('Sign Out',style: TextStyle(
+          fontSize: 15,
+          fontFamily: 'OpenSans',
+        ),),
+        onPressed: () async {
+          await _auth.signOut();
+        },
+      )
+    ],
+  ),
         
         body:
         
@@ -65,6 +85,7 @@ Future getData() async {
                    style: TextStyle(
                      fontSize: 20.0,
                      fontWeight: FontWeight.w700,
+                     fontFamily: 'OpenSans',
                 
                      
                    ),
@@ -78,23 +99,8 @@ Future getData() async {
   
          }
           ),
-        backgroundColor: Colors.lightBlueAccent,
-  appBar: AppBar(
-    title: Text('Flutter'),
-    centerTitle: true,
-    titleSpacing: 2.0,
-    backgroundColor: Colors.blue[600],
-    elevation: 0.0,
-    actions: <Widget>[
-      FlatButton.icon(
-        icon: Icon(Icons.person),
-        label: Text('Sign Out'),
-        onPressed: () async {
-          await _auth.signOut();
-        },
-      )
-    ],
-  ),
+       
+  
       );
     }
   

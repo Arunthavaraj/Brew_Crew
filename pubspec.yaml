@@ -28,13 +28,13 @@ dependencies:
   provider: ^3.2.0
   http: ^0.12.0+2
   font_awesome_flutter: ^8.5.0
-  flutter_launcher_icons: ^0.7.4
   simple_animations: ^1.3.4
   page_transition: ^1.1.4
   flutter_facebook_login: ^2.0.1
   flutter_facebook_auth: ^0.1.1
   flutter_auth_buttons: ^0.6.0
   firebase_core: ^0.4.3+1
+  flutter_launcher_icons: ^0.7.4
 
 dev_dependencies:
   flutter_test:
@@ -42,7 +42,7 @@ dev_dependencies:
 
 
 flutter_icons:
-  android: true
+  android: "launcher_icon"
   ios: true    
   image_path: "assets/logo.png" 
 
@@ -66,6 +66,8 @@ flutter:
    - assets/icon.png
 
 
+
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
@@ -81,9 +83,12 @@ flutter:
     - family: Nunito
       fonts:
         - asset: assets/Nunito.ttf
-    - family: Montserrat-Black
+    - family: Open Sans
       fonts:
-        - asset: assets/Montserrat-Black.ttf     
+        - asset: assets/OpenSans-ExtraBold.ttf  
+        - asset: assets/OpenSans-SemiBold.ttf
+     
+
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

@@ -105,7 +105,7 @@ class _SignInState extends State<SignIn> {
                 color: Colors.blue,
                 child: Text(
                   'Login',
-                  style: TextStyle(color: Colors.black87),
+                  style: TextStyle(color: Colors.black87,fontFamily:'OpenSans'),
                 ),
                 onPressed: () async {
                 if(_formKey.currentState.validate()){
@@ -122,7 +122,7 @@ class _SignInState extends State<SignIn> {
               Text(
                 error,
                 textAlign: TextAlign.center,
-                style: TextStyle(color: Colors.red, fontSize: 14.0
+                style: TextStyle(color: Colors.red, fontSize: 14.0,fontFamily: 'OpenSans'
                 ),
               ),
             Padding(
@@ -131,6 +131,7 @@ class _SignInState extends State<SignIn> {
             textAlign: TextAlign.center,
               style: TextStyle(color: Colors.white,
               fontSize: 20.0,
+              fontFamily: 'OpenSans',
               ),
               ),
               
@@ -143,7 +144,8 @@ class _SignInState extends State<SignIn> {
                    color: Colors.blue,
                   child: Text(
                     'Register',
-                    style: TextStyle(color: Colors.black),
+                    style: TextStyle(color: Colors.black,
+                    fontFamily: 'OpenSans'),
                   ),
                   onPressed: () async {
                     widget.toggleView();
@@ -160,7 +162,8 @@ class _SignInState extends State<SignIn> {
                    color: Colors.blue,
                   child: Text(
                     'Login using Facebook',
-                    style: TextStyle(color: Colors.black),
+                    style: TextStyle(color: Colors.black,
+                    fontFamily: 'OpenSans'),
                   ),
                   onPressed: () async {
                Navigator.of(context)
